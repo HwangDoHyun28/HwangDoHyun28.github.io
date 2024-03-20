@@ -30,7 +30,7 @@ twitter_username: dohyun
 github_username:  HwangDoHyun28
 
 # Build settings
-theme: Lanyon
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-include-cache
