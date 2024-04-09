@@ -3,9 +3,14 @@ name: crawlingPractice
 
 # 어떠한 이벤트가 발생했을 때, 워크플로우를 실행시킬지 정한다.
 # ex) push나 pull이 일어났을때, 또는 cron을 통해 일정주기마다 실행시킬지
-on: [push]
-#  schedule:
-#    - cron: "*/10 * * * *"
+on:
+  schedule:
+    - cron: 0 0 * * *
+  push:
+    branches: [ source ]
+  pull_request:
+    branches: [ source ]
+  workflow_dispatch:
 
 # 워크플로우가 실행되면 수행될 동작을 정한다.
 jobs:
